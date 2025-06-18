@@ -3,9 +3,10 @@ services:
     name: automatisch-main
     env: node
     repo: https://github.com/keyng-david/automatisch
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    buildCommand: npm install
+    startCommand: npm run build && npm start
     plan: free
+    nodeVersion: 18
     autoDeploy: false
     envVars:
       - key: HOST
