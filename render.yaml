@@ -8,6 +8,8 @@ services:
     plan: free
     autoDeploy: false
     envVars:
+      - key: PORT
+        value: 10000
       - key: HOST
         fromService:
           name: automatisch-main
