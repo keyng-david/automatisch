@@ -3,8 +3,8 @@ services:
     name: automatisch-main
     env: node
     repo: https://github.com/keyng-david/automatisch
-    buildCommand: npm install
-    startCommand: npm start
+    buildCommand: cd packages/web && npm install
+    startCommand: cd packages/web && npm start
     plan: free
     autoDeploy: false
     envVars:
@@ -39,7 +39,7 @@ services:
 databases:
   - name: automatisch-database
     databaseName: automatisch
-    plan: free 
+    plan: free
 envVarGroups:
   - name: common-env-vars
     envVars:
