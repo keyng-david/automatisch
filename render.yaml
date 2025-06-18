@@ -2,7 +2,7 @@ services:
   - type: web
     name: automatisch-main
     env: node
-    repo: https://github.com/automatisch/automatisch
+    repo: https://github.com/keyng-david/automatisch
     buildCommand: npm install && npm run build
     startCommand: npm start
     plan: free
