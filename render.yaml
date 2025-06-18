@@ -3,7 +3,7 @@ services:
     name: automatisch-main
     env: node
     repo: https://github.com/keyng-david/automatisch
-    buildCommand: cd packages/web && npm install
+    buildCommand: cd packages/web && npm install --legacy-peer-deps
     startCommand: cd packages/web && npm start
     plan: free
     autoDeploy: false
